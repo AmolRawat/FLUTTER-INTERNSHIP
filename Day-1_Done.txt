@@ -1,0 +1,35 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+      home: Material(
+    child: Scaffold(
+      backgroundColor: Colors.green.shade500,
+      appBar: AppBar(
+        title: Text('Flutter'),
+        backgroundColor: Colors.black,
+        titleTextStyle: TextStyle(
+          color: Colors.white,
+          fontSize: 20,
+          fontStyle: FontStyle.italic,
+          fontWeight: FontWeight.bold,
+        ),
+      ),
+      body: Center(
+        child: Text(
+          'Hello World',
+          style: TextStyle(
+            color: Colors.deepPurple.shade400,
+            fontSize: 40,
+            fontStyle: FontStyle.italic,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.people_alt),
+      ),
+    ),
+  )));
+}
